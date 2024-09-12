@@ -33,6 +33,7 @@ class InternetworkTest {
 	
 	@Test
 	void testDisconnectFrom() {
+		pc.connectTo(wifi);
 		pc.disconnectFrom(wifi);
 		assertEquals(Set.of(), pc.getNetworks());
 		assertEquals(Set.of(), wifi.getDevices());
