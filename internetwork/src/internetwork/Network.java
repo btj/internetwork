@@ -3,6 +3,9 @@ package internetwork;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * @invar | getDevices().stream().allMatch(d -> d != null && d.getNetworks().contains(this))
+ */
 public class Network {
 	
 	/**
